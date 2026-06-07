@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Viena darba nedēļa Datorikas nodaļas studenta dzīvē - vienas lapas praktiskais darbs tīmekļa dizaina pamatiem." />
+  <title>LU studenta dienasgrāmata</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#saturs">Pāriet uz saturu</a>
+
+  <header class="site-header" id="sakums">
+    <nav class="topbar" aria-label="Galvenā navigācija">
+      <a class="brand" href="#sakums" aria-label="Atgriezties sākumā">
+        <span class="brand-mark" aria-hidden="true">AB</span>
+        <span>LU studenta dienasgrāmata</span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        Izvēlne
+      </button>
+
+      <div class="nav-actions" id="main-nav">
+        <a href="#ievads">Ievads</a>
+        <a href="#dienas">Dienas</a>
+        <a href="#par-darbu">Par darbu</a>
+        <button class="theme-toggle" type="button" aria-pressed="false">Tumšais režīms</button>
+      </div>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <p class="eyebrow">Viena darba nedēļa</p>
+        <h1 id="hero-title">Datorikas nodaļas studenta dzīvē</h1>
+        <p>
+          Vienas lapas vietne par mācību ritmu, ceļu uz nodarbībām, digitālo vidi,
+          praktiskajiem darbiem un nelieliem ikdienas mirkļiem universitātē.
+        </p>
+        <div class="hero-buttons">
+          <a class="button primary" href="#dienas">Apskatīt nedēļu</a>
+          <a class="button secondary" href="#par-darbu">Autors</a>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/my-photo_hero-visual.jpg" alt="Students universitātē kopā ar kursabiedru" />
+        <p class="hero-caption">Ikdienas mirklis universitātē</p>
+      </div>
+    </section>
+  </header>
+
+  <main id="saturs">
+    <section class="intro-section" id="ievads" aria-labelledby="intro-title">
+      <div class="section-heading">
+        <p class="eyebrow">Ievads</p>
+        <h2 id="intro-title">Par šo nedēļu</h2>
+      </div>
+      <div class="intro-card">
+        <p>
+          Šī vietne ir veidota kā neliela digitāla dienasgrāmata, kurā darba nedēļa ir sadalīta piecos secīgos stāstos. Katrs ieraksts parāda citu studenta ikdienas daļu: pirmdienas plānošanu, otrdienas darbu e-studiju vidē, trešdienas klātienes nodarbības, ceturtdienas praktisko darbu un piektdienas nedēļas noslēgumu. Mērķis nav tikai uzskaitīt notikumus, bet arī parādīt, kā studenti apvieno lekcijas, patstāvīgo darbu, tehniskus uzdevumus un atpūtas brīžus. Lapas dizains ir mierīgs, gaiši zils un viegli pārskatāms, lai saturs būtu uztverams gan datorā, gan telefonā. Tumšais režīms paredzēts vakara lietošanai, kad spilgts fons var traucēt.
+        </p>
+      </div>
+    </section>
+
+    <section class="controls" aria-label="Satura kārtošana">
+      <div>
+        <p class="eyebrow">Navigācija</p>
+        <h2 id="dienas">Nedēļas ieraksti</h2>
+      </div>
+      <button class="sort-toggle" type="button" aria-pressed="false">Rādīt no piektdienas</button>
+    </section>
+
+    <section class="timeline" aria-label="Pieci nedēļas ieraksti">
+      <article class="day-card" id="pirmdiena" data-day="1">
+        <div class="day-image"><img src="assets/my-photo-1.jpg" alt="Studenta nedēļas plānošana pie datora" /></div>
+        <div class="day-content">
+          <p class="day-label">Pirmdiena</p>
+          <h3>Nedēļas sākums un plānošana</h3>
+          <p>
+            Pirmdienas rīts parasti sākas ar nedēļas plāna pārskatīšanu. Pirms došanās uz universitāti students pārbauda lekciju sarakstu, e-studiju paziņojumus un uzdevumu termiņus. Tas palīdz saprast, kuras nodarbības notiek klātienē, kuras tiešsaistē un kurām nepieciešama iepriekšēja sagatavošanās. Pirmajā dienā īpaši svarīgi ir sakārtot prioritātes, jo darba nedēļā ātri sakrājas gan mazi tehniski uzdevumi, gan lielāki patstāvīgie darbi. Universitātē diena turpinās ar ievadlekciju, īsu pierakstu pārskatīšanu un sarunām ar kursabiedriem par nedēļas plāniem. Pirmdiena nosaka kopējo ritmu: ja tā sākas mierīgi un strukturēti, arī pārējās dienas kļūst vieglāk kontrolējamas.
+          </p>
+        </div>
+      </article>
+
+      <article class="day-card" id="otrdiena" data-day="2">
+        <div class="day-image"><img src="assets/my-photo-2.jpg" alt="Digitālā mācību vide un studiju materiāli datorā" /></div>
+        <div class="day-content">
+          <p class="day-label">Otrdiena</p>
+          <h3>Digitālā vide un patstāvīgais darbs</h3>
+          <p>
+            Otrdien lielākā uzmanība tiek pievērsta digitālajai mācību videi. Students pieslēdzas e-studijām, pārskata pasniedzēju ievietotos materiālus un lejupielādē failus, kas nepieciešami praktiskajiem uzdevumiem. Daļa darba notiek pārlūkprogrammā, daļa - koda redaktorā vai citā specializētā programmā. Šādā dienā ir svarīgi neapmaldīties starp cilnēm, dokumentiem un paziņojumiem, tāpēc noder īss uzdevumu saraksts. Digitālā vide atvieglo mācīšanos, jo materiāli ir pieejami jebkurā laikā, tomēr tā prasa arī disciplīnu. Ja students pats neseko līdzi termiņiem, darbi var sakrāties ļoti ātri. Otrdiena labi parāda, ka datorikas studijas nav tikai lekcijas, bet arī regulārs patstāvīgs darbs.
+          </p>
+        </div>
+      </article>
+
+      <article class="day-card" id="tresdiena" data-day="3">
+        <div class="day-image"><img src="assets/my-photo-3.jpg" alt="Universitātes vide klātienes nodarbību laikā" /></div>
+        <div class="day-content">
+          <p class="day-label">Trešdiena</p>
+          <h3>Klātienes nodarbības un universitātes vide</h3>
+          <p>
+            Trešdiena ir diena, kad īpaši jūtama universitātes vide. Ceļš uz nodarbībām, auditorijas, gaiteņi un īsas sarunas starp lekcijām veido sajūtu, ka studijas nav tikai individuāls darbs pie datora. Klātienes lekcijās ir vieglāk uzdot jautājumus, pamanīt pasniedzēja uzsvarus un salīdzināt savus risinājumus ar kursabiedru pieeju. Pēc nodarbības students bieži paliek universitātē, lai bibliotēkā vai koplietošanas telpā pabeigtu iesāktu darbu. Šāda vide palīdz koncentrēties, jo apkārt ir cilvēki ar līdzīgu mērķi. Trešdiena parāda studiju sociālo pusi: zināšanas rodas ne tikai no materiāliem, bet arī no diskusijām, jautājumiem un kopīgas problēmu risināšanas.
+          </p>
+        </div>
+      </article>
+
+      <article class="day-card" id="ceturtdiena" data-day="4">
+        <div class="day-image"><img src="assets/my-photo-4.jpg" alt="Praktiskais darbs ar datoru un studiju uzdevumiem" /></div>
+        <div class="day-content">
+          <p class="day-label">Ceturtdiena</p>
+          <h3>Praktiskais darbs un kļūdu labošana</h3>
+          <p>
+            Ceturtdien uzmanības centrā ir praktiskais darbs. Students atver iepriekš sagatavotos failus, pārbauda prasības un sāk veidot risinājumu soli pa solim. Datorikas studijās liela daļa mācīšanās notiek tieši brīdī, kad kaut kas nestrādā: programma nepalaižas, izkārtojums pārlūkā izskatās citādi nekā plānots vai datu apstrāde dod nepareizu rezultātu. Tad jāmeklē kļūdas cēlonis, jāpārbauda sintakse, jālasa dokumentācija un jātestē dažādi varianti. Šis process var būt lēns, bet tas attīsta pacietību un precizitāti. Ceturtdiena parāda, ka labs rezultāts nerodas uzreiz. Tas veidojas no mēģinājumiem, pārbaudēm, labojumiem un spējas mierīgi analizēt problēmu.
+          </p>
+        </div>
+      </article>
+
+      <article class="day-card" id="piektdiena" data-day="5">
+        <div class="day-image"><img src="assets/my-photo-5.jpg" alt="Nedēļas noslēgums un paveikto darbu pārskatīšana" /></div>
+        <div class="day-content">
+          <p class="day-label">Piektdiena</p>
+          <h3>Nedēļas noslēgums un secinājumi</h3>
+          <p>
+            Piektdien students apkopo nedēļā paveikto. Tiek pārskatīti iesniegtie uzdevumi, sakārtotas mapes, saglabātas darba versijas un pierakstīti jautājumi, kas palikuši neskaidri. Šī diena ir piemērota arī nelielai refleksijai: kas izdevās labi, kur pietrūka laika un ko nākamajā nedēļā vajadzētu sākt agrāk. Studenta darba nedēļa reti beidzas pilnīgi precīzi piektdienas pēcpusdienā, jo daļa mācību procesu turpinās arī brīvdienās. Tomēr piektdiena palīdz noslēgt vienu posmu un nepazaudēt kopējo virzienu. Ja nedēļa tiek pabeigta ar skaidru pārskatu, nākamais sākums kļūst mierīgāks, bet studiju process - pārskatāmāks un apzinātāks.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <section class="about" id="par-darbu" aria-labelledby="about-title">
+      <div>
+        <p class="eyebrow">Autors</p>
+        <h2 id="about-title">Aleksandrs Buslajevs, ab23233</h2>
+        <p>
+          Darba nosaukums: <strong>Viena darba nedēļa Datorikas nodaļas studenta dzīvē</strong>. <br>
+          Vietne veidota kā HTML, CSS un JavaScript vienas lapas risinājums ar gaišo un tumšo režīmu, responsīvu izkārtojumu, aktīvām iekšējām saitēm un autora fotogrāfijām.
+        </p>
+      </div>
+      <a class="button secondary" href="#sakums">Atpakaļ uz sākumu</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Aleksandrs Buslajevs, ab23233. Tīmekļa dizaina pamati.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
